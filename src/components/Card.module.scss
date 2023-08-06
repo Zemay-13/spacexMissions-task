@@ -1,0 +1,51 @@
+.card {
+    z-index: 1;
+    display: flex;
+    background-image: url(https://wallpapershome.ru/images/pages/ico_h/18250.jpg);
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 320px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .title {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        border: 1px solid #718eb0;
+        border-radius: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        max-width: max-content;
+        padding: 5px 7px;
+        text-align: center;
+
+    }
+
+    .desc {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(239, 239, 239);
+        padding-bottom: 20px;
+    }
+
+    .imgCard {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
