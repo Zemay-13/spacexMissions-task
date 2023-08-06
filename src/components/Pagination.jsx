@@ -1,6 +1,6 @@
-import ReactPaginate from "react-paginate";
 import { useSelector, useDispatch } from "react-redux";
 import { setPage } from "../redux/filterSlice";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 import styles from "./Pagination.module.scss";
 
@@ -15,7 +15,7 @@ const Pagination = ({ totalPages, hasPrevPage, hasNextPage, data }) => {
         disabled={!hasPrevPage}
         onClick={() => dispatch(setPage(data.prevPage))}
       >
-        prev
+        <AiOutlineArrowLeft className={styles.arrow} />
       </button>
       <p className={styles.page}>
         {page} / {totalPages}
@@ -25,7 +25,7 @@ const Pagination = ({ totalPages, hasPrevPage, hasNextPage, data }) => {
         disabled={!hasNextPage}
         onClick={() => dispatch(setPage(data.nextPage))}
       >
-        next
+        <AiOutlineArrowRight className={styles.arrow} />
       </button>
     </div>
   );
