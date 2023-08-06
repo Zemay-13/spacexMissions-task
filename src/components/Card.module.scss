@@ -8,7 +8,9 @@
     padding: 10px;
     border-radius: 20px;
     max-width: 320px;
+    cursor: pointer;
     color: white;
+    height: max-content;
     font-family: 'Courier New', Courier, monospace;
     transition: 0.3s ease;
 
@@ -36,10 +38,27 @@
     }
 
     .desc {
+        transition: 1s ease;
+        cursor: pointer;
         font-size: 14px;
         line-height: 20px;
         color: rgb(239, 239, 239);
         padding-bottom: 20px;
+
+
+    }
+
+    .descShort {
+        transition: 1s ease;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(239, 239, 239);
+        padding-bottom: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
     }
 
     .imgCard {
